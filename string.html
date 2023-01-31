@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>string method</title>
+</head>
+<body>
+
+   <script>
+   
+      // two ways of javascript string method 
+	  // 1 string literal
+	  // 2 string object (new keyword)
+	  
+	  
+	  // 1 string literal
+	  
+	  var a = 'aruna';
+	  console.log(a);
+	  
+	  // 2 string object
+	  
+	   var b = new String("hii all");
+	  console.log(b);
+	  
+	  
+	  // methods
+	  // 1 charAt method
+	  
+	   var c = 'aruna';
+	  console.log(c.charAt(1));
+	 
+	  
+	  // 2 concat
+	  
+	   var c1 = 'hi... ';
+	   var c2 = 'how are you ?';
+	   var c3 = c1.concat(c2);
+	  console.log(c3);
+	 
+	  
+	  // 3 indexOf
+	  
+	   var d = 'javascript is a scripting language';
+	   var d1 = d.indexOf('v');
+	  console.log(d1);
+	 
+	  
+	  // 4 lastindexOf
+	  
+	   var l1 = 'javascript is a scripting language';
+	   var l2 = l1.lastIndexOf('a');
+	  console.log(l2);
+	  
+	  // 5 toLowerCase()
+	  
+	   var low = 'JAVASCRIPT';
+	   var low1 = low.toLowerCase();
+	  console.log(low1);
+
+	  
+	  // 6 toUpperCase()
+	  
+	   var up = 'javascript';
+	   var up1 = up.toUpperCase();
+	  console.log(up1);
+	  
+	  // 7 slice()
+	  
+	   var s = 'javascript';
+	   var s1 = s.slice(3,6);
+      console.log(s1);
+      
+  	
+
+      // 8 trim()
+	  
+	   var t = '  hi ';
+	   var t1 = t.trim();
+	  console.log(t1); 
+	  document.write(t1); 
+	  // 9 split()
+	  
+	   var sp = 'javascript';
+	   var sp1 = sp.split('');
+	  console.log(sp1);
+	  document.write(sp1);
+	  
+	  // 10 charCodeAt(unicode)
+	  
+	   var ca1 = 'javascript';
+	  console.log(ca1.charCodeAt(s));
+	  
+	  // 11 search
+	  
+	   var ser = 'javascript is a scripting language';
+	  console.log(ser.search('language'));
+	  // 12 match
+	  
+	   var m = 'aruna';
+	  console.log(m.match(/[a-u]/));
+	  
+	  // 13 replace
+	  
+	   var r = 'aru';
+      console.log(r.replace('u', 'una'));
+     
+	  
+	  // 14 substr
+	  
+	   var s = 'javascript';
+	  console.log(s.substr(4,6 ));
+	  
+
+
+	  
+	  // 15 toLocalLowerCase()
+	  
+	  var tl = 'ARUNA';
+	  console.log(tl.toLocaleLowerCase());
+	  
+	 
+	 
+	 
+	 
+	 var k = '<# aruna >';
+
+      var l = k.replace(/[^a-zA-Z ]/g, '');
+
+      console.log(l);
+   </script>
+
+</body>
+</html>
